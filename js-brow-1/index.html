@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayusculas</title>
+</head>
+<body>
+    <label for="texto">Escribe algo:</label>
+    <input type="text" id="texto">
+    <button class="btn">Convertir mensaje a mayusculas</button>
+    <p id="resultado"></p>
+    <p id="resultadoMayusculas"></p>
+
+
+    <script>
+        // Escribe en mayusculas, sobre el parrafo con id: resultado, el valor que recibe el input tipo text
+        /* const input = document.querySelector('#texto');
+        const resultado = document.querySelector('#resultado');
+        input.addEventListener('input', function() {
+            const texto = input.value.toUpperCase();
+            resultado.textContent = texto;
+        });*/
+
+        // Escribe en mayusculas, sobre el parrafo con id: resultadoMayusculas, el valor que recibe el input tipo text
+        // Tambien devuelve el valor del input tipo text en minusculas sobre el parrafo con id: resultado
+        const btn = document.querySelector('.btn');
+        const input = document.querySelector('#texto');
+        const resultado = document.querySelector('#resultado');
+        const resultadoMayusculas = document.querySelector('#resultadoMayusculas');
+        btn.addEventListener('click', function() {
+            const mayuscula = input.value.toUpperCase();
+            resultadoMayusculas.textContent = mayuscula;
+            resultado.textContent = mayuscula.toLowerCase();
+        })
+    </script>
+</body>
+</html>
