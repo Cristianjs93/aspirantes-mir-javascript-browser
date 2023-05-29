@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(226, 222, 222);
+}
+
+.box {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.box {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px rgba(111, 106, 160, 0.832) solid;
+}
+
+.taskName {
+    border-radius: 5px;
+    border: 2px rgb(226, 222, 222) solid;
+    outline: none;
+    background-color: rgb(226, 222, 222);
+    width: 100%;
+}
+
+.inputBox {
+    background-color: #f2f2f2;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#add {
+    background-color: #ff424f;
+}
+.buttonContainer{
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+.buttonContainer > button {
+    background-color: #1a756f;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #398f89;   
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+}
+
+.selected {
+    position: relative;
+    width: 100%;
+}
+
+.selected::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    height: 5px;
+    width: 100%;
+    background-color: #0de0d2;
+    border-radius: 10px;
+}
