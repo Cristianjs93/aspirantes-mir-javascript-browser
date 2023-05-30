@@ -45,7 +45,7 @@ button {
 }
 
 #add {
-    background-color: #ff424f;
+    background-color: #1a756f;
 }
 .buttonContainer{
     margin: 0 auto;
@@ -54,7 +54,7 @@ button {
 }
 
 .buttonContainer > button {
-    background-color: #1a756f;
+    background-color: #ff424f;
 
 }
 
@@ -83,8 +83,8 @@ li {
     display: block;
     position: absolute;
     top: 7px;
-    height: 5px;
+    height: 3px;
     width: 100%;
-    background-color: #0de0d2;
+    background-color: rgba(111, 106, 160, 0.832);
     border-radius: 10px;
 }

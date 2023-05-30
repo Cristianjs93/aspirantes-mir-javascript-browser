@@ -7,6 +7,7 @@ let taskList = [];
 
 form.addEventListener('submit', handleSubmit);
 deleteButton.addEventListener('click', handleDelete);
+clearTask.setAttribute("autocomplete", "off");
 
 function handleSubmit (event) {
     event.preventDefault();
