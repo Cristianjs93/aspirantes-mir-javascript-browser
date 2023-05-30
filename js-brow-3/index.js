@@ -1,10 +1,12 @@
 const form = document.querySelector("form");
-const input = document.querySelector("input");
+const textInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
 const saveButton = document.querySelector("#save");
 const deleteButton = document.querySelector("#delete");
 const section = document.querySelector("section");
 
-input.setAttribute("autocomplete", "off");
+textInput.setAttribute("autocomplete", "off");
+emailInput.setAttribute("autocomplete", "off");
 
 // Manejar el evento de enviar el formulario
 form.addEventListener("submit", saveName);
@@ -18,28 +20,38 @@ function saveName(event) {
 
   const data = new FormData(event.target);
   const name = data.get("name");
+  const email = data.get("email");
+  const user = {
+    name: name,
+    email: email,
+  };
+  var objJSON = JSON.stringify(user);
 
-  localStorage.setItem("name", name);
+  localStorage.setItem("user", objJSON);
 
-  input.value = "";
+  textInput.value = "";
+  emailInput.value = "";
 
   showName();
 }
 
 // // Función para mostrar el nombre guardado en localStorage
 function showName() {
-  const showName = localStorage.getItem("name");
+  const user = localStorage.getItem("user");
+  const userJS = JSON.parse(user);
+  const showName = userJS.name;
+  const showEmail = userJS.email;
 
   if (showName.length === 0) {
     text = "No hay datos";
-    section.textContent = showName;
+    section.textContent = text;
   } else {
     text = showName;
-    section.textContent = showName;
+    section.textContent = "Nombre: " + showName + " Email: " + showEmail;
   }
 }
 
 // Función para borrar el nombre guardado en localStorage
 function deleteName() {
-  localStorage.removeItem("name");
+  localStorage.clear();
 }

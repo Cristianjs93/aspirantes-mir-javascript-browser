@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 15PX;
+}
+
+section {
+    content: "";
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 15PX;
+    margin-top: 20px;
+}
+
+#email {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(232, 232, 232);
+    margin-left: 0;
+}
+
+#name {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(232, 232, 232);
+    margin-left: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    width: min-content;
+    margin: 0 auto;
+    
+}
+
+#save {
+    color: #302c2c;
+    width: 70px;
+    background-color: rgb(142, 240, 193);
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: aliceblue;
+    
+}
+
+#delete {
+    color: #302c2c;
+    width: 70px;
+    background-color: rgb(255, 185, 168);
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: aliceblue;
+}
+
+
+
+
