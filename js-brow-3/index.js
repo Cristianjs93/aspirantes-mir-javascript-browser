@@ -53,5 +53,5 @@ function showName() {
 
 // Función para borrar el nombre guardado en localStorage
 function deleteName() {
-  localStorage.clear();
+  localStorage.removeItem("user");
 }
