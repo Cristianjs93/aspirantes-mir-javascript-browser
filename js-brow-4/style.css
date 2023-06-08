@@ -1,0 +1,36 @@
+.subMenu {
+    display: none;
+}
+.show {
+    display: block;
+}
+.mainUl{
+    color: red
+}
+button {
+    background-color: #fff;
+    color:rgb(23, 209, 23);
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: rgb(23, 209, 23);
+    font-style: italic;
+}
+
+.inactive {
+    color: black;
+    padding-left: 20px;
+}
+
